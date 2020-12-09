@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+    <img src="/images/mlb.jpg" alt="MLB logo" width="auto" height="150">
+    <h1><%= title %></h1>
+    <p> <%= message %></p>
+    <section>
+      <% for(let user of users) { %>
+      <article id="useCard <%=user.id> %>" class="user-card">
+        <img src="<%=user.avatar> %>" alt="<%=user.nome> %>" class="user-avatar">
+        <h3 class=user-name> <%=user.nome> %> <%=user.sobrenome> %> </h3>
+        <a href= # class="user-btn">Ver etalhes</a>
+      </article>
+      <% }%>
+    </section>
+  </body>
+</html>
